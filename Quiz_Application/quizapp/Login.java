@@ -15,33 +15,33 @@ public class Login extends JFrame implements ActionListener{
 
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("icons/login.jpg"));
         JLabel image = new JLabel(i1);
-        image.setBounds(-50,0,600,500);
+        image.setBounds(0,0,600,500);
         add(image);
 
         JLabel heading = new JLabel("MasterMinds");
-        heading.setBounds(650, 60, 300, 45);
+        heading.setBounds(750, 60, 300, 45);
         heading.setFont(new Font("TimesRoman", Font.BOLD, 40));
         add(heading);
 
         JLabel name = new JLabel("Enter Your Name: ");
-        name.setBounds(500, 168, 300, 45);
-        name.setFont(new Font("Courier", Font.BOLD, 20));
+        name.setBounds(810, 150, 300, 20);
+        name.setFont(new Font("Courier", Font.BOLD, 18));
         add(name);
 
         tfname = new JTextField();
-        tfname.setBounds(710, 175, 300, 30);
-        tfname.setFont(new Font("Courier", Font.BOLD,15));;
+        tfname.setBounds(735, 200, 300, 25);
+        tfname.setFont(new Font("Courier", Font.BOLD,20));;
         add(tfname);
 
         cont = new JButton("Continue");
-        cont.setBounds(600, 270, 120, 25);
+        cont.setBounds(735, 270, 120, 25);
         cont.setBackground(new Color(240,240,240));
         cont.setFont(new Font("Courier",Font.PLAIN,15));
-        add(cont);
         cont.addActionListener(this);
+        add(cont);
 
         exit = new JButton("Exit");
-        exit.setBounds(850, 270, 120, 25);
+        exit.setBounds(915, 270, 120, 25);
         exit.setBackground(new Color(240,240,240));
         exit.setFont(new Font("Courier",Font.PLAIN,15));
         add(exit);
